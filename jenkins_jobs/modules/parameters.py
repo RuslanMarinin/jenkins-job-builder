@@ -1328,6 +1328,8 @@ def __active_choice_param_internal(xml_parent, data):
         ("description", "description", ""),
         ("choice-type", "choiceType", "single-select", valid_choice_types_dict),
         ("enable-filters", "filterable", False),
+        ("random-name", "randomName", 'choice-param-{0}'.format(data["name"]).lower()),
+        ("visible-items", "visibleItemCount", 1),
         ("filter-starts-at", "filterLength", 1),
         ("_project-name", "projectName", None),
         ("_project-full-name", "projectFullName", None),
